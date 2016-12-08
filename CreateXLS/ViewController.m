@@ -19,7 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     UIButton *createButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    createButton.frame = CGRectMake(130, 300, 100, 20);
+    createButton.frame = CGRectMake(0, 0, 100, 20);
+    createButton.center = self.view.center;
     [createButton setTitle:@"生成XLS文件" forState:UIControlStateNormal];
     [createButton addTarget:self action:@selector(createXLSFile) forControlEvents:UIControlEventTouchUpInside];
     
